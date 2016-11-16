@@ -8,9 +8,27 @@
 	<meta charset="UTF-8">
 	<title>Christmas List</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather+Sans" rel="stylesheet">
+
+
+	 <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather+Sans|Berkshire+Swash" rel="stylesheet">
+
+  <style>
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 55px;
+  }
+  .my-cart-icon-affix {
+    transition: 1s;
+    position: fixed;
+    z-index: 999;
+  }
+
+
+  </style>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -23,6 +41,7 @@
 	<link rel="stylesheet" href="assets/css/practicesearchstyle.css">
 	<link rel="stylesheet" href="assets/css/flipclock.css">
 	<link rel="stylesheet" href="assets/css/lightbox.css">
+    <script type='text/javascript' src='assets/js/snowstorm.js'></script>
 
 	<!--link to flipclock-->
 	<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css">
@@ -32,31 +51,25 @@
 	</head>
 	<body>
 
-		<div id="myModal" class="modal">
-
-			<!-- Modal content -->
-			<div class="modal-content">
-				<span class="close">x</span>
-				<p>Some text in the Modal..</p>
-			</div>
-
-		</div>
+	
 
 		<div class="container">
 			<div id="row">				
 				<div class="col-md-12">
-					<h1 id="searchNavbar">Products <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge" id="cartIcon"></span></span></h1>
-
+        <a href="index.html"><h1 id="banner">Christmas List</h1></a>
+      <div style="float: right; cursor: pointer;">
+        <span class="stocking my-cart-icon""><img src="assets/images/stocking.png" alt=""><span class="badge badge-notify my-cart-badge"></span></span>
+        </div>
 				</div>	
-				
+</div>
 
-			</div>
+
 			
 			<div class="row">
 				
 				<div class="col-md-6">
-					<h3 class="text-center" id="search-title" >Search!</h3>
-					<input type="text" class="form-control" placeholder="Search here.." class="search" id="top">
+					<h3 class="text-center col-md-7d" id="search-title" > Search gifts!</h3>
+					<input type="text" class="form-control search" placeholder="Search here.." id="top">
 				</div>
 				<div class="col-md-6"></div>
 				<!-- <div class="col-md-2"></div>
@@ -73,10 +86,14 @@
 				<!-- <div class="col-md-1"></div> -->
 			</div>
 		
+    <img id="sleigh" src="assets/images/sleigh.png" alt="">
+
+
 				<div id="player">
 					
 				
 			</div>
+      <img id="footer" src="assets/images/footer.png" alt="">
 		</div>
 		<script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -121,8 +138,28 @@
   }
 </script>
 
+
 <script type="text/javascript" src="assets/js/libs/jquery.js"></script>
+
 <script type="text/javascript" src="assets/js/libs/lightbox.js"></script>
+
+
+  <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+  <script>
+  	$(function () {
+
+    
+
+    
+
+  });
+
+
+  </script>
+
+  <script type='text/javascript' src="assets/js/jquery.mycart.js"></script>
+  
+
 
 </div>
 </body>
