@@ -18,10 +18,8 @@ $(document).keypress(function(e) {
 
 // Heres the bug
 else if (window.location.href = "search.html") {
-  
-  $("#pics").load("#pics");
-  return false;
-
+	window.location.replace("search.html");
+	
 }
  // working 
 

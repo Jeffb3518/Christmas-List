@@ -40,7 +40,6 @@
     return objToReturn;
   }());
 
-
   var ProductManager = (function(){
     var objToReturn = {};
 
@@ -203,7 +202,7 @@
         '</div>' +
         '<div class="modal-footer">' +
         '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-        '<button type="button" class="btn btn-primary ' + classCheckoutCart + '">Checkout</button>' +
+        '<button type="button" class="btn btn-primary ' + classCheckoutCart + '">Send to North Pole</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -222,9 +221,9 @@
           '<tr title="' + this.summary + '" data-id="' + this.id + '" data-price="' + this.price + '">' +
           '<td class="text-center" style="width: 30px;"><img width="30px" height="30px" src="' + this.image + '"/></td>' +
           '<td>' + this.name + '</td>' +
-          '<td title="Unit Price">' + options.currencySymbol + this.price + '</td>' +
+          // '<td title="Unit Price">' + options.currencySymbol + this.price + '</td>' +
           '<td title="Quantity"><input type="number" min="1" style="width: 70px;" class="' + classProductQuantity + '" value="' + this.quantity + '"/></td>' +
-          '<td title="Total" class="' + classProductTotal + '">' + options.currencySymbol  + total + '</td>' +
+          '<td title="Total" class="' + classProductTotal + '">' + '</td>' +
           '<td title="Remove from Cart" class="text-center" style="width: 30px;"><a href="javascript:void(0);" class="btn btn-xs btn-danger ' + classProductRemove + '">X</a></td>' +
           '</tr>'
         );
@@ -233,7 +232,7 @@
       $cartTable.append(products.length ?
         '<tr>' +
         '<td></td>' +
-        '<td><strong>Total</strong></td>' +
+        '<td><strong>Total Items:</strong></td>' +
         '<td></td>' +
         '<td></td>' +
         '<td><strong class="'+ classProductQuantity  +'"</strong></td>' +
